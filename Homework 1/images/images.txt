@@ -1,0 +1,9 @@
+HTML Image Syntax The HTML tag is used to embed an image in a web page. 
+Images are not technically inserted into a web page;
+Images are linked to websites. The tag creates a hold for the referenced image.
+The tag is empty, it only contains attributes and has no closing tag. 
+
+The tag has two required attributes: 
+src - Specifies the path to the image. 
+Alt - Specifies alternative text for the image
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Example with Canvas</title>
+	<script>
+		// Canvas Application
+		function draw() {
+			var canvas = document.getElementById('canvas');
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+				ctx.fillStyle = '#FF0000';
+				ctx.fillRect(0, 0, 150, 150);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Form Example with Canvas</h1>
+	<form action="#" method="get" target="_blank">
+		<label for="input1">Input 1:</label>
+		<input type="text" id="input1" name="input1"><br>
+		<label for="input2">Input 2:</label>
+		<input type="text" id="input2" name="input2"><br>
+		<button type="submit">Submit (GET)</button>
+	</form>
+
+	<form action="#" method="post" target="_self">
+		<label for="input3">Input 3:</label>
+		<input type="text" id="input3" name="input3"><br>
+		<label for="input4">Input 4:</label>
+		<input type="text" id="input4" name="input4"><br>
+		<button type="submit">Submit (POST)</button>
+	</form>
+
+	<canvas id="canvas" width="150" height="150"></canvas>
+	<button type="button" onclick="draw()">Draw</button>
+</body>
+</html>
